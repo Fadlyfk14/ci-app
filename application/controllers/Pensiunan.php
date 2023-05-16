@@ -63,7 +63,7 @@ class Pensiunan extends CI_Controller
     {
         $data['judul'] = 'Form Ubah Data Pensiun';
         $data['pensiunan'] = $this->pensiunan_model->getPensiunanById($id);
-        $data['jurusan'] = ['TASPEN', 'ASABRI'];
+        $data['jenis_pensiun'] = ['TASPEN', 'ASABRI'];
 
         $this->form_validation->set_rules('nopen', 'Nopen', 'required|numeric');
         $this->form_validation->set_rules('nama_pensiunan', 'NamaPensiunan', 'required');

@@ -22,8 +22,8 @@
                         </div>
                         <div class="form-group">
                             <label for="jenis_pensiun">Jenis Pensiun</label>
-                            <select class="form-control" id="jenis_pensiun" name="jenis_pensiun">
-                                <?php foreach( $pensiunan as $j ) : ?>
+                            <select class="form-control" id="jenis_pensiun" name="Jenis_pensiun">
+                                <?php foreach( $jenis_pensiun as $j ) : ?>
                                     <?php if( $j == $pensiunan['jenis_pensiun'] ) : ?>
                                         <option value="<?= $j; ?>" selected><?= $j; ?></option>
                                     <?php else : ?>
