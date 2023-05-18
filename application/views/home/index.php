@@ -1,5 +1,3 @@
-<body style="background-color:#FFA600;">
-    <h1>Hello, <?= $nama; ?>!</h1>
-    
+<body style="background-color:#f6c23e;">
 
- 
+    <h1>Hello, <?= $nama; ?>!</h1>
