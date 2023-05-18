@@ -19,7 +19,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     <img src="<?= base_url(); ?>assets/pos.png" style="width:30px;height:30px>
+     <img src="<?= base_url(); ?>assets/logo.png" style="width:40px;height:40px>
     <div class="container">
 
       <a class="navbar-brand" href="#">POSPEN</a>

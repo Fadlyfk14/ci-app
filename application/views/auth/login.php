@@ -20,7 +20,7 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row align-items-end justify-content-center ">
-                            <img src="<?= base_url('assets/logo.png'); ?>" alt="Logo" height="150">
+                            <img src="<?= base_url('assets/logo.png'); ?>" alt="Logo" height="100" width="100">
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-lg-10">
