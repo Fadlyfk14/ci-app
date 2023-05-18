@@ -47,7 +47,7 @@
                                         <a class="small text-warning" href="<?= base_url('auth/forgotpassword'); ?>">Forgot Password?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small text-warning" href="<?= base_url('auth/register_options'); ?>">Create an Account!</a>
+                                        <a class="small text-warning" href="<?= base_url('auth/registration'); ?>">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>
