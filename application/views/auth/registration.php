@@ -1,3 +1,4 @@
+<body style="background-color:#f6c23e;">
 <div class="container">
 
     <div class="card o-hidden border-0 shadow-lg my-5 col-lg-7 mx-auto">
@@ -32,9 +33,6 @@
                             </button>
                         </form>
                         <hr>
-                        <div class="text-center">
-                            <a class="small" href="<?= base_url('auth/forgotpassword'); ?>">Forgot Password?</a>
-                        </div>
                         <div class="text-center">
                             <a class="small" href="<?= base_url('auth'); ?>">Already have an account? Login!</a>
                         </div>
