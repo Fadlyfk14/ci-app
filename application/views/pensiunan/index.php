@@ -1,5 +1,5 @@
 <div class="container">
-<body style="background-color:#FFA600;">
+<body style="background-color:#f6c23e;">
     <div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash'); ?>"></div>
     <?php if ($this->session->flashdata('flash')) : ?>
     <!-- <div class="row mt-3">

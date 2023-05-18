@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row mt-3">
         <div class="col-md-6">
-        <body style="background-color:#FFA600;">
+        <body style="background-color:#f6c23e;">
             <div class="card">
                 <div class="card-header">
                     Detail Data Pensiunan
