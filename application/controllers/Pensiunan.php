@@ -77,7 +77,7 @@ class Pensiunan extends CI_Controller
             $this->load->view('pensiunan/ubah', $data);
             $this->load->view('templates/footer');
         } else {
-            $this->pensiunan_model->ubahDatapensiunan();
+            $this->pensiunan_model->ubahDatapensiunan($id);
             $this->session->set_flashdata('flash', 'Diubah');
             redirect('pensiunan');
         }

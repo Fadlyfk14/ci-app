@@ -1,6 +1,7 @@
-<?php 
+<?php
 
-class Pensiunan_model extends CI_model {
+class Pensiunan_model extends CI_model
+{
     public function getAllPensiunan()
     {
         return $this->db->get('pensiunan')->result_array();
@@ -31,7 +32,7 @@ class Pensiunan_model extends CI_model {
         return $this->db->get_where('pensiunan', ['id' => $id])->row_array();
     }
 
-    public function ubahDataPensiunan()
+    public function ubahDataPensiunan($id)
     {
         $data = [
             "nopen" => $this->input->post('nopen', true),
@@ -41,8 +42,7 @@ class Pensiunan_model extends CI_model {
             "nama_penerima" => $this->input->post('nama_penerima', true),
             "notelp_penerima" => $this->input->post('notelp_penerima', true)
         ];
-
-        $this->db->where('id', $this->input->post('id'));
+        $this->db->where('id', $id);
         $this->db->update('pensiunan', $data);
     }
 

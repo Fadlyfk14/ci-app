@@ -1,12 +1,14 @@
 const flashData = $(".flash-data").data("flashdata");
 
-if (flashData) {
-  Swal({
-    title: "Data Pensiun",
-    text: "Berhasil " + flashData,
-    type: "success",
-  });
-}
+$(document).ready(function() {
+  if (flashData === 'Diubah') {
+    Swal.fire({
+      title: "Data Pensiun",
+      text: "Berhasil " + flashData,
+      icon: "success",
+    });
+  }
+});
 
 // tombol-hapus
 $(".tombol-hapus").on("click", function (e) {

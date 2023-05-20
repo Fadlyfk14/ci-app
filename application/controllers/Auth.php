@@ -23,12 +23,10 @@ class Auth extends CI_Controller
             $this->load->view('templates/auth_header', $data);
             $this->load->view('auth/login');
             $this->load->view('templates/auth_footer');
-        } 
-     else {
-  
-        $this->_login();
-    }
-    
+        } else {
+
+            $this->_login();
+        }
     }
 
 
@@ -41,6 +39,7 @@ class Auth extends CI_Controller
 
         // jika usernya ada
         if ($user) {
+
             // jika usernya aktif
             if ($user['is_active'] == 1) {
                 // cek password
@@ -50,6 +49,8 @@ class Auth extends CI_Controller
                         'role_id' => $user['role_id']
                     ];
                     $this->session->set_userdata($data);
+                    $this->session->set_userdata('nama', $user['name']);
+
                     if ($user['role_id'] == 1) {
                         redirect('home');
                     } else {
@@ -62,11 +63,11 @@ class Auth extends CI_Controller
             } else {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">This email has not been activated!</div>');
                 redirect('auth');
-          }
+            }
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email is not registered!</div>');
             redirect('auth');
-        }  
+        }
     }
 
 
