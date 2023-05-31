@@ -11,7 +11,7 @@
                         <form action="" method="post">
                             <div class="form-group">
                                 <label for="nopen">NOMOR PENSIUN</label>
-                                <input type="number" name="nopen" class="form-control" id="nopen">
+                                <input type="text" name="nopen" class="form-control" id="nopen">
                                 <small class="form-text text-danger"><?= form_error('nopen'); ?></small>
                             </div>
                             <div class="form-group">

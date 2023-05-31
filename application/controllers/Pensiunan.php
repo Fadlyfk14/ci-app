@@ -25,7 +25,7 @@ class Pensiunan extends CI_Controller
     {
         $data['judul'] = 'Form Tambah Data Pensiunan';
 
-        $this->form_validation->set_rules('nopen', 'Nopen', 'required|numeric');
+        $this->form_validation->set_rules('nopen', 'Nopen', 'required');
         $this->form_validation->set_rules('nama_pensiunan', 'NamaPensiunan', 'required');
         $this->form_validation->set_rules('jenis_pensiun', 'JenisPensiunan', 'required');
         $this->form_validation->set_rules('nik_penerima', 'NikPenerima', 'required|numeric');
