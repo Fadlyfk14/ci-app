@@ -15,7 +15,8 @@ class Pensiunan_model extends CI_model
             "jenis_pensiun" => $this->input->post('jenis_pensiun', true),
             "nik_penerima" => $this->input->post('nik_penerima', true),
             "nama_penerima" => $this->input->post('nama_penerima', true),
-            "notelp_penerima" => $this->input->post('notelp_penerima', true)
+            "notelp_penerima" => $this->input->post('notelp_penerima', true),
+            "hub_penerima" => $this->input->post('hub_penerima', true)
         ];
 
         $this->db->insert('pensiunan', $data);
@@ -40,7 +41,8 @@ class Pensiunan_model extends CI_model
             "jenis_pensiun" => $this->input->post('jenis_pensiun', true),
             "nik_penerima" => $this->input->post('nik_penerima', true),
             "nama_penerima" => $this->input->post('nama_penerima', true),
-            "notelp_penerima" => $this->input->post('notelp_penerima', true)
+            "notelp_penerima" => $this->input->post('notelp_penerima', true),
+            "hub_penerima" => $this->input->post('hub_penerima', true)
         ];
         $this->db->where('id', $id);
         $this->db->update('pensiunan', $data);

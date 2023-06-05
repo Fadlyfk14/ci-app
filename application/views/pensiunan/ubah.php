@@ -47,6 +47,11 @@
                                 <input type="text" name="notelp_penerima" class="form-control" id="notelp_penerima" value="<?= $pensiunan['notelp_penerima']; ?>">
                                 <small class="form-text text-danger"><?= form_error('notelp_penerima'); ?></small>
                             </div>
+                            <div class="form-group">
+                                <label for="hub_penerima">Hubungan</label>
+                                <input type="text" name="hub_penerima" class="form-control" id="hub_penerima" value="<?= $pensiunan['hub_penerima']; ?>">
+                                <small class="form-text text-danger"><?= form_error('hub_penerima'); ?></small>
+                            </div>
 
                             <button type="submit" name="ubah" class="btn btn-primary float-right">Ubah Data</button>
                         </form>

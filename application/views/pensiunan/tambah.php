@@ -41,6 +41,11 @@
                                 <input type="number" name="notelp_penerima" class="form-control" id="notelp_penerima">
                                 <small class="form-text text-danger"><?= form_error('notelp_penerima'); ?></small>
                             </div>
+                            <div class="form-group">
+                                <label for="hub_penerima">HUBUNGAN</label>
+                                <input type="text" name="hub_penerima" class="form-control" id="hub_penerima">
+                                <small class="form-text text-danger"><?= form_error('hub_penerima'); ?></small>
+                            </div>
 
                             <button type="submit" name="tambah" class="btn btn-primary float-right">Tambah Data</button>
                         </form>

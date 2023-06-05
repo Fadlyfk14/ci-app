@@ -43,6 +43,12 @@
                                 <input type="text" class="form-control" id="notelp_penerima" name="notelp_penerima" value="<?= $pensiunan['notelp_penerima']; ?>" readonly>
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="hub_penerima" class="col-sm-4 col-form-label">Hubungan</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="hub_penerima" name="hub_penerima" value="<?= $pensiunan['hub_penerima']; ?>" readonly>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-footer">
                         <a href="<?= base_url(); ?>pensiunan" class="btn btn-primary">Kembali</a>

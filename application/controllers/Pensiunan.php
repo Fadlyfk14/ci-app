@@ -31,6 +31,7 @@ class Pensiunan extends CI_Controller
         $this->form_validation->set_rules('nik_penerima', 'NikPenerima', 'required|numeric');
         $this->form_validation->set_rules('nama_penerima', 'NamaPenerima', 'required');
         $this->form_validation->set_rules('notelp_penerima', 'Notelp', 'required|numeric');
+        $this->form_validation->set_rules('hub_penerima', 'Hubungan', 'required');
 
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/header', $data);
@@ -71,6 +72,7 @@ class Pensiunan extends CI_Controller
         $this->form_validation->set_rules('nik_penerima', 'NikPenerima', 'required|numeric');
         $this->form_validation->set_rules('nama_penerima', 'NamaPenerima', 'required');
         $this->form_validation->set_rules('notelp_penerima', 'Notelp', 'required|numeric');
+        $this->form_validation->set_rules('hub_penerima', 'Hubungan', 'required');
 
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/header', $data);
