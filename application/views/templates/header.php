@@ -30,7 +30,6 @@
       <div class="navbar-nav mr-auto">
         <a class="nav-item nav-link" href="<?= base_url(); ?>home">My Profile<span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link" href="<?= base_url(); ?>pensiunan">Pensiunan</a>
-        <a class="nav-item nav-link" href="#">About</a>
       </div>
       <div class="dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" id="logoutDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
